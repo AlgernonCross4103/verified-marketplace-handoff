@@ -1,0 +1,10 @@
+[package]
+name = "verified-marketplace-handoff"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Join marketplace employees to verified company workspaces"
+
+[dependencies]
+serde_json = "1"
+

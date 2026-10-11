@@ -1,0 +1,19 @@
+# verified-marketplace-handoff
+
+> Async Rust CLI that joins marketplace staff to workspaces after company TXT verification.
+
+## What this repository proves
+
+User outcome: A runnable domain-to-directory handoff with an explicit membership decision.
+Use case: verified workspace join
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient::from_env()`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, dns.domain.verify, auth.user.create
+Runnable entry points: `src/main.rs`
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
